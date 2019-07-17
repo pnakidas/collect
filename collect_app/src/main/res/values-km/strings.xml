@@ -216,7 +216,6 @@
   <string name="found_in_settings">ដោះធីក​ដើម្បី​លាក់ចេញ​ពីការ​កំណត់ទូទៅ</string>
   <string name="save_preferences">រក្សាទុកការកំណត់ទៅកាន់ថាស</string>
   <string name="form_forward">បន្ទាប់</string>
-  <string name="form_backward">មុន</string>
   <string name="navigation">ការ​ស្វែង​រកផ្លូវ</string>
   <string name="swipe_navigation">ប្រើការកកិតដេក</string>
   <string name="buttons_navigation">ប្រើប៊ូតុង ទៅមុខ/ថយក្រោយ</string>
@@ -296,7 +295,6 @@
   <string name="leave_a_review">ទុកមតិនៅក្នុងហាង Play</string>
   <string name="leave_a_review_msg">ការ​ផ្តល់​មតិ​ (សង្ឃឹមថាជាវិជ្ជមាន) របស់​អ្នក​បង្កើន​ភាព​មើល​ឃើញ​នៃ​កម្មវិធី​នៅ​ក្នុង Play Store ។</string>
   <!--Geo string added in feature-geofeatures branch-->
-  <string name="map_preferences">ដៅផែនទី</string>
   <string name="map_sdk_selector_title">ផែនទី SDK</string>
   <string name="map_sdk_behavior">ផែនទី SDK</string>
   <string name="google_maps_sdk">ផែនទី Google SDK</string>
@@ -324,11 +322,8 @@
   <string name="start">ចាប់ផ្តើម</string>
   <string name="enable_gps">ដំណើរ​ការ​ប្រព័ន្ធ​ចាប់​ទីតាំង</string>
   <string name="geotrace_title">GeoTrace</string>
-  <string name="polygon_save">រក្សាទុកជាពហុកោណ</string>
-  <string name="polyline_save">រក្សាទុកជាពហុបន្ទាត់</string>
   <string name="gps_enable_message">ប្រព័ន្ធ​ចាប់​ទី​តាំង​ក្នុងឧបករណ៍​របស់​អ្នក​បានបិទ។ តើ​អ្នក​ចង់​បើក​ដំណើរ​ការ​វា​ដែរ​ឬ​ទេ?</string>
   <string name="select_offline_layer">ជ្រើសរើសស្រទាប់ក្រៅបណ្តាញ</string>
-  <string name="polygon_or_polyline">រក្សាទុក GeoTrace ជា</string>
   <string name="geo_clear_warning">លក្ខណះ​ពិសេស​ត្រូវ​បាន​បង្កើត។ តើ​អ្នក​ចង់​លុប​លក្ខណះ​នេះ​ដែរ​ឬ​ទេ?</string>
   <string name="geo_exit_warning">បោះបង់​ការផ្លាស់​ប្តូរ និងត្រឡប់ទៅកាន់ ODK វិញ?</string>
   <string name="polygon_validator">ត្រូវការចំនុចយ៉ាងតិច 3 ដើម្បី​បង្កើតពហុកោណ</string>

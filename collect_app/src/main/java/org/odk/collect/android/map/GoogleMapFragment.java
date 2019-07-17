@@ -20,11 +20,6 @@ import android.content.Intent;
 import android.location.Location;
 import android.os.Handler;
 import android.provider.Settings;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.annotation.VisibleForTesting;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.maps.CameraUpdate;
@@ -53,13 +48,18 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.VisibleForTesting;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import timber.log.Timber;
 
 public class GoogleMapFragment extends SupportMapFragment implements
     MapFragment, LocationListener, LocationClient.LocationClientListener,
     GoogleMap.OnMapClickListener, GoogleMap.OnMapLongClickListener,
-    GoogleMap.OnMarkerDragListener {
+    GoogleMap.OnMarkerDragListener, GoogleMap.OnMarkerClickListener {
     public static final LatLng INITIAL_CENTER = new LatLng(0, -30);
     public static final float INITIAL_ZOOM = 2;
     public static final float POINT_ZOOM = 16;
@@ -108,6 +108,7 @@ public class GoogleMapFragment extends SupportMapFragment implements
             this.map = map;
             map.setOnMapClickListener(this);
             map.setOnMapLongClickListener(this);
+            map.setOnMarkerClickListener(this);
             map.setOnMarkerDragListener(this);
             map.getUiSettings().setCompassEnabled(true);
             // Don't show the blue dot on the map; we'll draw crosshairs instead.
@@ -263,7 +264,7 @@ public class GoogleMapFragment extends SupportMapFragment implements
     }
 
     @Override public void removeFeature(int featureId) {
-        MapFeature feature = features.get(featureId);
+        MapFeature feature = features.remove(featureId);
         if (feature != null) {
             feature.dispose();
         }
@@ -379,6 +380,11 @@ public class GoogleMapFragment extends SupportMapFragment implements
         if (longPressListener != null) {
             longPressListener.onPoint(fromLatLng(latLng));
         }
+    }
+
+    @Override public boolean onMarkerClick(Marker marker) {
+        onMapClick(marker.getPosition());
+        return true;
     }
 
     @Override public void onMarkerDragStart(Marker marker) {

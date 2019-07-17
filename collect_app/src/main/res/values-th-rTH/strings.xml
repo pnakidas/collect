@@ -196,7 +196,6 @@
   <string name="found_in_settings">ปล่อยว่างเพื่อซ่อนจากเมนูตั้งค่าทั่วไป</string>
   <string name="save_preferences">บันทึกการตั้งค่า</string>
   <string name="form_forward">ต่อไป</string>
-  <string name="form_backward">ย้อนกลับ</string>
   <string name="navigation">ค้นหา</string>
   <string name="swipe_navigation">ใช้การเลื่อนหน้าจอไปด้านข้าง</string>
   <string name="buttons_navigation">ใช่ปุ่มเลื่อนไปข้างหน้า/ย้อนกลับ</string>
@@ -260,7 +259,6 @@
 </string>
   <string name="about_preferences">เกี่ยวกับ</string>
   <!--Geo string added in feature-geofeatures branch-->
-  <string name="map_preferences">ทำแผนที่</string>
   <string name="map_sdk_selector_title">Mapping SDK</string>
   <string name="map_sdk_behavior">Mapping SDK</string>
   <string name="google_maps_sdk">Google Maps SDK</string>
@@ -286,11 +284,8 @@
   <string name="start">เริ่มต้น</string>
   <string name="enable_gps">เปิด GPS</string>
   <string name="geotrace_title">GeoTrace</string>
-  <string name="polygon_save">บันทึกเป็น Polygon</string>
-  <string name="polyline_save">บันทึกเป็น Polyline</string>
   <string name="gps_enable_message">GPS ถูกปิดไว้ ต้องการเปิดใช้งานหรือไม่?</string>
   <string name="select_offline_layer">เลือกเลเยอร์ที่บันทึกไว้</string>
-  <string name="polygon_or_polyline">บันทึก GeoTrace เป็น</string>
   <string name="geo_exit_warning">ยกเลิกการเปลี่ยนแปลงและกลับไปที่ ODK?</string>
   <string name="polygon_validator">ต้องมีจุดพิกัด 3 จุดขึ้นไปเพื่อสร้าง Polygon</string>
   <string name="clear">ลบ</string>
